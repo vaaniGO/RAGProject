@@ -31,7 +31,6 @@ def main():
     query_text = args.query_text
 
     # Prepare the DB.
-    # Using 'models/embedding-001' as a default model. Consider making this configurable
     embedding_function = GoogleGenerativeAIEmbeddings(
         model="models/embedding-001", 
         google_api_key=google_api_key
